@@ -7,4 +7,8 @@ export default class ProductService{
     getProductById(id){
         return axios.get("http://localhost:8081/api/products/getbyid?id="+ id)
     }
+
+    add(product){
+        return axios.post("http://localhost:8081/api/products/add")
+    }
 } 
