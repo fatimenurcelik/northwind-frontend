@@ -5,6 +5,7 @@ import {Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../store/actions/cartAction";
 import { removeFromCart } from "../store/actions/cartAction";
+import { toast } from "react-toastify";
 
 export default function ProductList() {
   //bir fonksiyon çağırmak için gibi düşünülebilir
@@ -24,6 +25,7 @@ console.log(products);
   const handleAddToCart = (product) =>{
     dispatch(addToCart(product))
     console.log(product);
+    toast.success(`${product.name} sepete eklendi!`)
   }
 
   const handleRemoveFromCart = (product) =>{
