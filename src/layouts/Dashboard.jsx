@@ -2,8 +2,8 @@ import React from 'react'
 import Categories from './Categories'
 import ProductList from '../pages/ProductList'
 import ProductAdd from '../pages/ProductAdd'
-import { Grid, Image } from 'semantic-ui-react'
-import { Routes, Route, Link, Navlink } from 'react-router-dom';
+import { Grid } from 'semantic-ui-react'
+import { Routes, Route} from 'react-router-dom';
 import ProductDetail from '../pages/ProductDetail';
 import CartDetail from '../pages/CartDetail';
 import { ToastContainer } from 'react-toastify';
